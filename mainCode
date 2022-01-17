@@ -1,0 +1,1304 @@
+TRISA = %00000000
+TRISB = %00000000
+TRISC = %00000000
+TRISD = %00000000
+TRISE = %00000000
+
+WaveA var word
+WaveB var word
+WaveC var word
+WaveD var word
+WaveE var word
+WaveF var word
+WaveG var word
+WaveH var word
+WaveI var word
+WaveJ var word
+WaveK var word
+WaveX var word
+
+MAIN:
+Porta = %00000000
+Portb = %00000000
+Porte = %00000000
+portd = %00001000
+portc = %00001000
+pause 500
+portd = %00010100
+portc = %00001000
+pause 500
+porta = %00000100
+portd = %10010100
+portc = %00001000
+pause 500
+porta = %00000100
+porte = %00000010
+portb = %00010000
+portd = %10010100
+portc = %00001000
+Pause 500
+porta = %00000100
+porte = %00000110
+portb = %00110000
+portd = %10010100
+portc = %00001000
+Pause 500
+porta = %00000100
+porte = %00000110
+portb = %01110000
+portd = %10010101
+portc = %00001000
+Pause 500
+porta = %00000100
+porte = %00000110
+portb = %11110000
+portd = %10010111
+portc = %00001000
+Pause 500
+porta = %00100100
+porte = %00000110
+portb = %11110100
+portd = %10010111
+portc = %00001000
+Pause 500
+porta = %00100101
+porte = %00000110
+portb = %11110100
+portd = %10110111
+portc = %00001000
+Pause 500
+porta = %00100111
+porte = %00000110
+portb = %11110100
+portd = %11110111
+portc = %00001000
+Pause 500
+porta = %00100111
+porte = %00000111
+portb = %11111100
+portd = %11110111
+portc = %00001000
+Pause 500
+porta = %00100111
+porte = %00000111
+portb = %11111100
+portd = %11100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000111
+portb = %11111100
+portd = %01100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000101
+portb = %11101100
+portd = %01100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %11001100
+portd = %01100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %10001100
+portd = %01100010
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %00001100
+portd = %01100000
+portc = %00001000
+Pause 100
+porta = %00000011
+porte = %00000001
+portb = %00001000
+portd = %01100000
+portc = %00001000
+Pause 100
+porta = %00000010
+porte = %00000001
+portb = %00001000
+portd = %01000000
+portc = %00001000
+Pause 100
+porta = %00000000
+porte = %00000001
+portb = %00001000
+portd = %00000000
+portc = %00001000
+Pause 100
+porta = %00000000
+porte = %00000011
+portb = %00011000
+portd = %00000000
+portc = %00001000
+Pause 500
+porta = %00000000
+porte = %00000111
+portb = %00111000
+portd = %00000000
+portc = %00001000
+Pause 500
+porta = %00000000
+porte = %00000111
+portb = %01111000
+portd = %00000001
+portc = %00001000
+Pause 500
+porta = %00000000
+porte = %00000111
+portb = %11111000
+portd = %00000011
+portc = %00001000
+Pause 500
+porta = %00100000
+porte = %00000111
+portb = %11111100
+portd = %00000011
+portc = %00001000
+Pause 500
+porta = %00100001
+porte = %00000111
+portb = %11111000
+portd = %00100011
+portc = %00001000
+Pause 500
+porta = %00100011
+porte = %00000111
+portb = %11111100
+portd = %01100011
+portc = %00001000
+Pause 500
+porta = %00100011
+porte = %00000101
+portb = %11101100
+portd = %01100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %11001100
+portd = %01100011
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %10001100
+portd = %01100010
+portc = %00001000
+Pause 100
+porta = %00100011
+porte = %00000001
+portb = %00001100
+portd = %01100000
+portc = %00001000
+Pause 100
+porta = %00000011
+porte = %00000001
+portb = %00001000
+portd = %01100000
+portc = %00001000
+Pause 100
+porta = %00000010
+porte = %00000001
+portb = %00001000
+portd = %01000000
+portc = %00001000
+Pause 100
+porta = %00000000
+porte = %00000001
+portb = %00001000
+portd = %00000000
+portc = %00001000
+Pause 100
+portb = %00000000
+porta = %00000000
+porte = %00000000
+portd = %00001000
+portc = %00100000
+Pause 50
+For U = 1 to 100
+portb = %00000000
+Porte = %00000000
+porta = %00000000
+portd = %00001000
+portc = %00100000
+Pause 1
+portb = %00000010
+Porte = %00000000
+porta = %00010100
+portd = %10000000
+portc = %01000000
+Pause 1
+portb = %00000010
+Porte = %00000000
+porta = %00010100
+portd = %10000000
+portc = %00010000
+Pause 1
+Next U
+For V = 1 to 100
+portb = %00000010
+Porte = %00000000
+porta = %00010100
+portd = %10000000
+portc = %01000000
+Pause 1
+portb = %00000010
+Porte = %00000000
+porta = %00010100
+portd = %10000000
+portc = %00010000
+Pause 1
+porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %10000000
+Pause 1
+porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %00001000
+Pause 1
+Next V
+For W = 1 to 100
+porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %10000000
+Pause 1
+porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %00001000
+Pause 1
+Next W
+For U = 1 to 100
+portb = %00000000
+porta = %00000000
+Porte = %00000000
+portd = %00001000
+portc = %00100000
+Pause 1
+Porte = %00000000
+portb = %00000010
+porta = %00010100
+portd = %10000000
+portc = %01000000
+Pause 1
+Porte = %00000000
+portb = %00000010
+porta = %00010100
+portd = %10000000
+portc = %00010000
+Pause 1
+Next U
+For V = 1 to 100
+Porte = %00000000
+portb = %00000010
+porta = %00010100
+portd = %10000000
+portc = %01000000
+Pause 1
+Porte = %00000000
+portb = %00000010
+porta = %00010100
+portd = %10000000
+portc = %00010000
+Pause 1
+Porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %10000000
+Pause 1
+Porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %00001000
+Pause 1
+Next V
+For W = 1 to 100
+Porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %10000000
+Pause 1
+Porta = %00000000
+portb = %10001000
+porte = %00000001
+portd = %00000010
+portc = %00001000
+Pause 1
+Next W
+For WaveX = 1 to 50
+Porta = %00000000
+Portd = %00000000
+Porte = %00000000
+portb = %00000100
+portc = %00001000
+Pause 1
+Porta = %00000000
+Portd = %00000000
+Portb = %00000000
+porte = %00000010
+portc = %00010000
+Pause 1
+Portd = %00000000
+Portb = %00000000
+Porte = %00000000
+porta = %00100000
+portc = %00100000
+Pause 1
+Porta = %00000000
+Portb = %00000000
+Porte = %00000000
+portd = %01000000
+portc = %01000000
+Pause 1
+Next WaveX
+For WaveA = 1 to 50
+portd = %00100000
+portc = %00001000
+Pause 1
+porte = %00000100
+portc = %00010000
+Pause 1
+porta = %00010001
+portc = %00100000
+Pause 1
+portb = %00010000
+portc = %01000000
+Pause 1
+Next WaveA
+For WaveB = 1 to 50
+porta = %00000010
+portc = %00001000
+Pause 1
+portd = %00000001
+portc = %00010000
+Pause 1
+portd = %01000000
+portc = %00100000
+Pause 1
+portb = %00100000
+portc = %01000000
+Pause 1
+Next WaveB
+For WaveC = 1 to 50
+porte = %00000010
+portc = %00001000
+Pause 1
+porta = %00100000
+portc = %00010000
+Pause 1
+portb = %00010000
+portc = %00100000
+Pause 1
+portb = %01000000
+portc = %01000000
+Pause 1
+Next WaveC
+For WaveD = 1 to 50
+porte = %00000100
+portc = %00001000
+Pause 1
+porta = %00000001
+portc = %00010000
+Pause 1
+portb = %00100000
+portc = %00100000
+Pause 1
+portb = %00000100
+portc = %01000000
+Pause 1
+Next WaveD
+For WaveE = 1 to 50
+portd = %00000001
+portc = %00001000
+Pause 1
+portd = %01000000
+portc = %00010000
+Pause 1
+portb = %01000000
+portc = %00100000
+Pause 1
+portd = %00100000
+portc = %01000000
+Pause 1
+Next WaveE
+For WaveF = 1 to 50
+porta = %00100000
+portc = %00001000
+Pause 1
+portb = %00010000
+portc = %00010000
+Pause 1
+portb = %00000100
+portc = %00100000
+Pause 1
+porta = %00000010
+portc = %01000000
+Pause 1
+Next WaveF
+For WaveG = 1 to 50
+porta = %00000001
+portc = %00001000
+Pause 1
+portb = %00100000
+portc = %00010000
+Pause 1
+portd = %00100000
+portc = %00100000
+Pause 1
+porte = %00000010
+portc = %01000000
+Pause 1
+Next WaveG
+For WaveH = 1 to 50
+portd = %01000000
+portc = %00001000
+Pause 1
+portb = %01000000
+portc = %00010000
+Pause 1
+porta = %00000010
+portc = %00100000
+Pause 1
+porte = %00000100
+portc = %01000000
+Pause 1
+Next WaveH
+For WaveI = 1 to 50
+portb = %00010000
+portc = %00001000
+Pause 1
+portb = %00000100
+portc = %00010000
+Pause 1
+porte = %00000010
+portc = %00100000
+Pause 1
+portd = %00000001
+portc = %01000000
+Pause 1
+Next WaveI
+For WaveJ = 1 to 50
+portb = %00100000
+portc = %00001000
+Pause 1
+portd = %00100000
+portc = %00010000
+Pause 1
+porte = %00000100
+portc = %00100000
+Pause 1
+porta = %00100000
+portc = %01000000
+Pause 1
+Next WaveJ
+For WaveK = 1 to 50
+portb = %01000000
+portc = %00001000
+Pause 1
+porta = %00000010
+portc = %00010000
+Pause 1
+portd = %00000001
+portc = %00100000
+Pause 1
+porta = %00100001
+portc = %01000000
+Pause 1
+Next WaveK
+For WaveX = 1 to 50
+portb = %00000100
+portc = %00001000
+Pause 1
+porte = %00000010
+portc = %00010000
+Pause 1
+porta = %00100000
+portc = %00100000
+Pause 1
+portd = %01000000
+portc = %01000000
+Pause 1
+Next WaveX
+For WaveA = 1 to 50
+portd = %00100000
+portc = %00001000
+Pause 1
+porte = %00000100
+portc = %00010000
+Pause 1
+porta = %00010001
+portc = %00100000
+Pause 1
+portb = %00010000
+portc = %01000000
+Pause 1
+Next WaveA
+For WaveB = 1 to 50
+porta = %00000010
+portc = %00001000
+Pause 1
+portd = %00000001
+portc = %00010000
+Pause 1
+portd = %01000000
+portc = %00100000
+Pause 1
+portb = %00100000
+portc = %01000000
+Pause 1
+Next WaveB
+For WaveC = 1 to 50
+porte = %00000010
+portc = %00001000
+Pause 1
+porta = %00100000
+portc = %00010000
+Pause 1
+portb = %00010000
+portc = %00100000
+Pause 1
+portb = %01000000
+portc = %01000000
+Pause 1
+Next WaveC
+For WaveD = 1 to 50
+porte = %00000100
+portc = %00001000
+Pause 1
+porta = %00000001
+portc = %00010000
+Pause 1
+portb = %00100000
+portc = %00100000
+Pause 1
+portb = %00000100
+portc = %01000000
+Pause 1
+Next WaveD
+For WaveE = 1 to 50
+portd = %00000001
+portc = %00001000
+Pause 1
+portd = %01000000
+portc = %00010000
+Pause 1
+portb = %01000000
+portc = %00100000
+Pause 1
+portd = %00100000
+portc = %01000000
+Pause 1
+Next WaveE
+For WaveF = 1 to 50
+porta = %00100000
+portc = %00001000
+Pause 1
+portb = %00010000
+portc = %00010000
+Pause 1
+portb = %00000100
+portc = %00100000
+Pause 1
+porta = %00000010
+portc = %01000000
+Pause 1
+Next WaveF
+For WaveG = 1 to 50
+porta = %00000001
+portc = %00001000
+Pause 1
+portb = %00100000
+portc = %00010000
+Pause 1
+portd = %00100000
+portc = %00100000
+Pause 1
+porte = %00000010
+portc = %01000000
+Pause 1
+Next WaveG
+For WaveH = 1 to 50
+portd = %01000000
+portc = %00001000
+Pause 1
+portb = %01000000
+portc = %00010000
+Pause 1
+porta = %00000010
+portc = %00100000
+Pause 1
+porte = %00000100
+portc = %01000000
+Pause 1
+Next WaveH
+For WaveI = 1 to 50
+portb = %00010000
+portc = %00001000
+Pause 1
+portb = %00000100
+portc = %00010000
+Pause 1
+porte = %00000010
+portc = %00100000
+Pause 1
+portd = %00000001
+portc = %01000000
+Pause 1
+Next WaveI
+For WaveJ = 1 to 50
+portb = %00100000
+portc = %00001000
+Pause 1
+portd = %00100000
+portc = %00010000
+Pause 1
+porte = %00000100
+portc = %00100000
+Pause 1
+porta = %00100000
+portc = %01000000
+Pause 1
+Next WaveJ
+For WaveK = 1 to 50
+portb = %01000000
+portc = %00001000
+Pause 1
+porta = %00000010
+portc = %00010000
+Pause 1
+portd = %00000001
+portc = %00100000
+Pause 1
+porta = %00100001
+portc = %01000000
+Pause 1
+Next WaveK
+For WaveX = 1 to 50
+portb = %00000100
+portc = %00001000
+Pause 1
+porte = %00000010
+portc = %00010000
+Pause 1
+porta = %00100000
+portc = %00100000
+Pause 1
+portd = %01000000
+portc = %01000000
+Pause 1
+Next WaveX
+For WaveA = 1 to 50
+portd = %00100000
+portc = %00001000
+Pause 1
+porte = %00000100
+portc = %00010000
+Pause 1
+porta = %00010001
+portc = %00100000
+Pause 1
+portb = %00010000
+portc = %01000000
+Pause 1
+Next WaveA
+For WaveB = 1 to 50
+porta = %00000010
+portc = %00001000
+Pause 1
+portd = %00000001
+portc = %00010000
+Pause 1
+portd = %01000000
+portc = %00100000
+Pause 1
+portb = %00100000
+portc = %01000000
+Pause 1
+Next WaveB
+For WaveC = 1 to 50
+porte = %00000010
+portc = %00001000
+Pause 1
+porta = %00100000
+portc = %00010000
+Pause 1
+portb = %00010000
+portc = %00100000
+Pause 1
+portb = %01000000
+portc = %01000000
+Pause 1
+Next WaveC
+For WaveD = 1 to 50
+porte = %00000100
+portc = %00001000
+Pause 1
+porta = %00000001
+portc = %00010000
+Pause 1
+portb = %00100000
+portc = %00100000
+Pause 1
+portb = %00000100
+portc = %01000000
+Pause 1
+Next WaveD
+For WaveE = 1 to 50
+portd = %00000001
+portc = %00001000
+Pause 1
+portd = %01000000
+portc = %00010000
+Pause 1
+portb = %01000000
+portc = %00100000
+Pause 1
+portd = %00100000
+portc = %01000000
+Pause 1
+Next WaveE
+portb = %00001000
+portc = %11111000
+Pause 50
+portb = %00011000
+portd = %01000000
+portc = %11111000
+Pause 50
+portb = %00111000
+porta = %00000001
+portd = %11000000
+portc = %11111000
+Pause 50
+portb = %01111001
+porta = %00100001
+portd = %11000100
+portc = %11111000
+Pause 50
+portb = %11111011
+porta = %00110001
+portd = %11001110
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111001
+portd = %11011111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111101
+porte = %00000100
+portd = %11111111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111111
+porte = %00000110
+portd = %11111111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111111
+porte = %00000111
+portd = %11111111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111111
+porte = %00000111
+portd = %11111111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111111
+porte = %00000110
+portd = %11111111
+portc = %11111000
+Pause 50
+portb = %11111111
+porta = %00111101
+porte = %00000100
+portd = %11111111
+portc = %11111000
+Pause 50
+porte = %00000000
+portb = %11111111
+porta = %00111001
+portd = %11011111
+portc = %11111000
+Pause 50
+portb = %11111011
+porta = %00110001
+portd = %11001110
+portc = %11111000
+Pause 50
+portb = %01111001
+porta = %00100001
+portd = %11000100
+portc = %11111000
+Pause 50
+portb = %00111000
+porta = %00000001
+portd = %11000000
+portc = %11111000
+Pause 50
+porta = %00000000
+portb = %00011000
+portd = %01000000
+portc = %11111000
+Pause 50
+portd = %00000000
+portb = %00001000
+portc = %11111000
+Pause 50
+For WaveK = 1 to 50
+portb = %01000000
+portc = %00001000
+Pause 1
+porta = %00000010
+portc = %00010000
+Pause 1
+portd = %00000001
+portc = %00100000
+Pause 1
+porta = %00100001
+portc = %01000000
+Pause 1
+Next WaveK
+For WaveJ = 1 to 50
+portb = %00100000
+portc = %00001000
+Pause 1
+portd = %00100000
+portc = %00010000
+Pause 1
+porte = %00000100
+portc = %00100000
+Pause 1
+porta = %00100000
+portc = %01000000
+Pause 1
+Next WaveJ
+For WaveI = 1 to 50
+portb = %00010000
+portc = %00001000
+Pause 1
+portb = %00000100
+portc = %00010000
+Pause 1
+porte = %00000010
+portc = %00100000
+Pause 1
+portd = %00000001
+portc = %01000000
+Pause 1
+Next WaveI
+For WaveH = 1 to 50
+portd = %01000000
+portc = %00001000
+Pause 1
+portb = %01000000
+portc = %00010000
+Pause 1
+porta = %00000010
+portc = %00100000
+Pause 1
+porte = %00000100
+portc = %01000000
+Pause 1
+Next WaveH
+For WaveG = 1 to 50
+porta = %00000001
+portc = %00001000
+Pause 1
+portb = %00100000
+portc = %00010000
+Pause 1
+portd = %00100000
+portc = %00100000
+Pause 1
+porte = %00000010
+portc = %01000000
+Pause 1
+Next WaveG
+For WaveF = 1 to 50
+porta = %00100000
+portc = %00001000
+Pause 1
+portb = %00010000
+portc = %00010000
+Pause 1
+portb = %00000100
+portc = %00100000
+Pause 1
+porta = %00000010
+portc = %01000000
+Pause 1
+Next WaveF
+For WaveE = 1 to 50
+portd = %00000001
+portc = %00001000
+Pause 1
+portd = %01000000
+portc = %00010000
+Pause 1
+portb = %01000000
+portc = %00100000
+Pause 1
+portd = %00100000
+portc = %01000000
+Pause 1
+Next WaveE
+For WaveD = 1 to 50
+porte = %00000100
+portc = %00001000
+Pause 1
+porta = %00000001
+portc = %00010000
+Pause 1
+portb = %00100000
+portc = %00100000
+Pause 1
+portb = %00000100
+portc = %01000000
+Pause 1
+Next WaveD
+For WaveC = 1 to 50
+porte = %00000010
+portc = %00001000
+Pause 1
+porta = %00100000
+portc = %00010000
+Pause 1
+portb = %00010000
+portc = %00100000
+Pause 1
+portb = %01000000
+portc = %01000000
+Pause 1
+Next WaveC
+For WaveB = 1 to 50
+porta = %00000010
+portc = %00001000
+Pause 1
+portd = %00000001
+portc = %00010000
+Pause 1
+portd = %01000000
+portc = %00100000
+Pause 1
+portb = %00100000
+portc = %01000000
+Pause 1
+Next WaveB
+For WaveA = 1 to 50
+portd = %00100000
+portc = %00001000
+Pause 1
+porte = %00000100
+portc = %00010000
+Pause 1
+porta = %00010001
+portc = %00100000
+Pause 1
+portb = %00010000
+portc = %01000000
+Pause 1
+Next WaveA
+For WaveX = 1 to 50
+portb = %00000100
+portc = %00001000
+Pause 1
+porte = %00000010
+portc = %00010000
+Pause 1
+porta = %00100000
+portc = %00100000
+Pause 1
+portd = %01000000
+portc = %01000000
+Pause 1
+Next WaveX
+For WaveK = 1 to 50
+portb = %01000000
+portc = %00001000
+Pause 1
+porta = %00000010
+portc = %00010000
+Pause 1
+portd = %00000001
+portc = %00100000
+Pause 1
+porta = %00100001
+portc = %01000000
+Pause 1
+Next WaveK
+For WaveJ = 1 to 50
+portb = %00100000
+portc = %00001000
+Pause 1
+portd = %00100000
+portc = %00010000
+Pause 1
+porte = %00000100
+portc = %00100000
+Pause 1
+porta = %00100000
+portc = %01000000
+Pause 1
+Next WaveJ
+For WaveI = 1 to 50
+portb = %00010000
+portc = %00001000
+Pause 1
+portb = %00000100
+portc = %00010000
+Pause 1
+porte = %00000010
+portc = %00100000
+Pause 1
+portd = %00000001
+portc = %01000000
+Pause 1
+Next WaveI
+For WaveH = 1 to 50
+portd = %01000000
+portc = %00001000
+Pause 1
+portb = %01000000
+portc = %00010000
+Pause 1
+porta = %00000010
+portc = %00100000
+Pause 1
+porte = %00000100
+portc = %01000000
+Pause 1
+Next WaveH
+For WaveG = 1 to 50
+porta = %00000001
+portc = %00001000
+Pause 1
+portb = %00100000
+portc = %00010000
+Pause 1
+portd = %00100000
+portc = %00100000
+Pause 1
+porte = %00000010
+portc = %01000000
+Pause 1
+Next WaveG
+For WaveF = 1 to 50
+porta = %00100000
+portc = %00001000
+Pause 1
+portb = %00010000
+portc = %00010000
+Pause 1
+portb = %00000100
+portc = %00100000
+Pause 1
+porta = %00000010
+portc = %01000000
+Pause 1
+Next WaveF
+For WaveE = 1 to 50
+portd = %00000001
+portc = %00001000
+Pause 1
+portd = %01000000
+portc = %00010000
+Pause 1
+portb = %01000000
+portc = %00100000
+Pause 1
+portd = %00100000
+portc = %01000000
+Pause 1
+Next WaveE
+For WaveD = 1 to 50
+porte = %00000100
+portc = %00001000
+Pause 1
+porta = %00000001
+portc = %00010000
+Pause 1
+portb = %00100000
+portc = %00100000
+Pause 1
+portb = %00000100
+portc = %01000000
+Pause 1
+Next WaveD
+For WaveC = 1 to 50
+porte = %00000010
+portc = %00001000
+Pause 1
+porta = %00100000
+portc = %00010000
+Pause 1
+portb = %00010000
+portc = %00100000
+Pause 1
+portb = %01000000
+portc = %01000000
+Pause 1
+Next WaveC
+For WaveB = 1 to 50
+porta = %00000010
+portc = %00001000
+Pause 1
+portd = %00000001
+portc = %00010000
+Pause 1
+portd = %01000000
+portc = %00100000
+Pause 1
+portb = %00100000
+portc = %01000000
+Pause 1
+Next WaveB
+For WaveA = 1 to 50
+portd = %00100000
+portc = %00001000
+Pause 1
+porte = %00000100
+portc = %00010000
+Pause 1
+porta = %00010001
+portc = %00100000
+Pause 1
+portb = %00010000
+portc = %01000000
+Pause 1
+Next WaveA
+For WaveX = 1 to 50
+portb = %00000100
+portc = %00001000
+Pause 1
+porte = %00000010
+portc = %00010000
+Pause 1
+porta = %00100000
+portc = %00100000
+Pause 1
+portd = %01000000
+portc = %01000000
+Pause 1
+Next WaveX
+Porte = %00000001
+portc = %11111000
+Pause 50
+Porta = %00000010
+Porte = %00000011
+portc = %11111000
+Pause 50
+Porta = %00000110
+Portd = %00100000
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00001110
+Portb = %00000100
+Portd = %00110001
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00011110
+Portb = %10000110
+Portd = %00111011
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111110
+Portb = %11000111
+Portd = %00111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11100111
+Portd = %10111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11110111
+Portd = %11111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11111111
+Portd = %11111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11111111
+Portd = %11111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11110111
+Portd = %11111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111111
+Portb = %11100111
+Portd = %10111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00111110
+Portb = %11000111
+Portd = %00111111
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00011110
+Portb = %10000110
+Portd = %00111011
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00001110
+Portb = %00000100
+Portd = %00110001
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00000110
+Portd = %00100000
+Porte = %00000111
+portc = %11111000
+Pause 50
+Porta = %00000010
+Porte = %00000011
+portc = %11111000
+Pause 50
+Porte = %00000001
+portc = %11111000
+Pause 50
+
+GOTO MAIN
